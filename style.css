@@ -3,6 +3,10 @@
     font-weight: 500;
 }
 
+header {
+    height: 95vh;
+}
+
 .topnav {
     display: flex;
     flex-direction: row;
@@ -24,6 +28,10 @@
     opacity: 0.5;
 }
 
+.yellownav {
+    background-color: #FBD334;
+}
+
 .about {
     border-bottom-left-radius: 3vh;
 }
@@ -35,7 +43,7 @@
 }
 
 .d-block {
-    max-width: 100vw;
+    width: 100vw;
 }
 
 li {
@@ -62,6 +70,11 @@ li {
     font-size: 9vh;
 }
 
+hr {
+    width: 20vw;
+    border: 0.5px solid black;
+}
+
 .developer {
     font-size: 5vh;
 }
@@ -70,11 +83,19 @@ main {
     margin: 0vh 10vw;
 }
 
+.aboutharry {
+    text-decoration: underline;
+    text-decoration-color: #FBD334;
+    margin-bottom: 4vh;
+}
+
 .harryimg {
     height: auto;
     width: auto;
     max-width: 20vw;
     max-height: 20vw;
+    border: 2px solid #FBD334;
+    padding: none;
     /* padding-left: 3vh; */
 }
 
@@ -95,29 +116,142 @@ main {
     flex-direction: row;
 }
 
+.github {
+    background-color: #FBD334;
+    display: flex;
+    justify-content: center;
+    padding: none;
+}
+
+.github:hover {
+    text-decoration: none;
+    background-color: #E5E5E5;
+    border: 2px solid #FBD334;
+    padding: none;
+}
+
 .column {
     flex: 33%;
     padding: 2vh;
 }
 
+#column1::first-letter {
+    font-size: 4.5em;
+    float: left;
+    margin-right: 1vw;
+    line-height: 8vh;
+    color: #FBD334;
+}
+
 .heading2 {
     margin-top: 10vh;
+    text-decoration: underline;
+    text-decoration: underline;
+    text-decoration-color: #FBD334;
+    margin-bottom: 6vh;
 }
 
 .portfolio {
     background-color: #E5E5E5;
     padding: 0.5vh;
+    margin: 1vh;
 }
 
+.title {
+    background-color: #FBD334;
+    text-align: center;
+    border-radius: 5px;
+}
 
+.portfolioimg {
+    height: 40vh;
+    width: auto;
+}
 
+#page1 {
+    display: flex;
+    flex-direction: row;
+}
 
+#page2 {
+    display: flex;
+    flex-direction: row;
+}
 
+#page3 {
+    display: flex;
+    flex-direction: row;
+}
 
+.rain {
+    font-size: 3vh;
+    padding-left: 1vw;
+}
 
+.heading3 {
+    font-size: 3vh;
+}
 
+.two {
+    display: flex;
+    justify-content: center;
+}
+
+.three {
+    width: 40vw;
+    margin-right: 0.3vw;
+}
+
+.four {
+    width: 40vw;
+    margin-left: 0.3vw;
+}
+
+.message {
+    margin: 1vh 0;
+    height: 20vh;
+    color: grey;
+}
+
+.three, .four, .submit, .message {
+    padding: 1vh;
+    box-sizing: border-box;
+    border: 2px solid #FBD334;
+}
+
+.submit {
+    margin-bottom: 2vh;
+}
+
+.submit:hover {
+    text-decoration: none;
+    background-color: #FBD334;
+    border: 2px solid #FBD334;
+}
+
+.comment3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.social {
+    margin: 2vh;
+}
 
 footer {
-    background-color: #B4C3D8;
+    background-color: #FBD334;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    margin-top: 3vh;
 }

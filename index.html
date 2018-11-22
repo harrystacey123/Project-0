@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  rel="stylesheet"href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navigation">
             <ul class="topnav">
-                <li class="toplist about hvr-wobble-top"><a>ABOUT</a></li>
-                <li class="toplist work"><a>PORTFOLIO</a></li>
-                <li class="toplist services"><a>SERVICES</a></li>
-                <li class="toplist contact"><a>CONTACT</a></li>
+                <a class="scroll" href="#about"><li class="toplist about">ABOUT</li></a>
+                <a class="scroll" href="#portfolios"><li class="toplist work">PORTFOLIOS</li></a>
+                <a class="scroll" href="#testimonials"><li class="toplist services">TESTIMONIALS</li></a>
+                <a class="scroll" href="#contact"><li class="toplist contact">CONTACT</li></a>
             </ul>
         </nav>
     <div id="scene" class="container">
         <h1 data-depth="0.2" class="harry">Harry Stacey</h1>
+        <hr>
         <h2 class="developer">Front-end Developer</h2>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -58,30 +60,71 @@
     </header>
     <main>
         <div class="floor">
-            <section class="ceiling">
-                <h1>ABOUT HARRY</h1>
+            <section id="about" class="ceiling">
+                <h1 class="aboutharry">ABOUT HARRY</h1>
                 <div class="row">
-                    <p class="column">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia fuga inventore saepe et accusantium similique sunt, ipsam laborum fugit sapiente rerum, aliquid dolorem? Unde provident placeat animi tenetur eum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi adipisci similique architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates distinctio provident fugiat, veniam, sequi omnis.</p>
-                    <p class="column">Alias sunt minima, aspernatur dolorem et eum ipsam nulla commodi fugiat eaque dignissimos aliquid odio, cupiditate ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi velit perspiciatis soluta nam hic excepturi quas et assumenda, incidunt non quis nisi officiis, quaerat eius totam possimus qui alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis laborum.</p>
+                    <p id="column1" class="column">Harry ipsum dolor sit amet consectetur adipisicing elit. Mollitia fuga inventore saepe et accusantium similique sunt, ipsam laborum fugit sapiente rerum, aliquid dolorem? Unde provident placeat animi tenetur eum maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi adipisci similique architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="column">Alias sunt minima, aspernatur dolorem et eum ipsam nulla commodi fugiat eaque dignissimos aliquid odio, cupiditate ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi velit perspiciatis soluta nam hic excepturi quas et assumenda, incidunt non quis nisi officiis, quaerat eius totam possimus qui alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis laborum. Voluptates distinctio provident fugiat, veniam, sequi omnis.</p>
                     <img class="column harryimg" src="images/harry.jpeg" alt="">
                 </div>
             </section> 
         </div>
-        <div>
+        <div id="portfolios">
             <h1 class="heading2">HARRY'S PORTFOLIOS</h1>
             <ul>
-                <li id="title1" class="title portfolio">CLICK TO SEE MY MONMUMENT LANDING PAGE</li>
-                <li id="page1" class="page portfolio">This is my monument landing page. Here's the link to my github.</li>
+                <li id="title1" class="title portfolio">MONMUMENT LANDING PAGE</li>
+                <li id="page1" class="page portfolio">
+                    <img class="portfolioimg" src="images/monument.jpeg" alt=""><p class="rain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nam optio dolorem voluptatibus vero impedit quibusdam nisi quisquam minima, eum ut dolore exercitationem quia totam inventore sunt sapiente ducimus fuga.
+                    <br>
+                    <a class="github" href="https://github.com/harrystacey123/Monument-Part-3">VIEW ON GITHUB</a>
+                    </p>
+                </li>
                 <li id="title2" class=" title portfolio">CLICK TO SEE MY GROCERY STORE PAGE</li>
-                <li id="page2" class="page portfolio">This is my grocery store page. Here's the link to my github.</li>
+                <li id="page2" class="page portfolio">
+                    <img class="portfolioimg" src="images/grocerystore.jpeg" alt=""><p class="rain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nam optio dolorem voluptatibus vero impedit quibusdam nisi quisquam minima, eum ut dolore exercitationem quia totam inventore sunt sapiente ducimus fuga.
+                    <br>
+                    <a class="github" href="https://github.com/harrystacey123/Week-2-project">VIEW ON GITHUB</a>
+                    </p>
+                </li>
                 <li id="title3" class="title portfolio">CLICK TO SEE MY TRIVIA API PAGE</li>
-                <li id="page3" class="portfolio">This is my trivia API page. Here's the link to my github.</li>
+                <li id="page3" class="portfolio">
+                    <img class="portfolioimg" src="images/triviaAPI.jpeg" alt=""><p class="rain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nam optio dolorem voluptatibus vero impedit quibusdam nisi quisquam minima, eum ut dolore exercitationem quia totam inventore sunt sapiente ducimus fuga.
+                    <br>
+                    <a class="github" href="https://github.com/harrystacey123/API-Lightning">VIEW ON GITHUB</a>
+                    </p>
+                </li>
             </ul>
         </div>
-
+        <div id="testimonials">
+            <h1 class="heading2">HARRY'S TESTIMONIALS</h1>
+            <h2 class="heading3">People I've Worked With Have Said Some Nice Things...</h2>
+            <h3>Person #1</h3>
+            <p>"Harry is really cool"</p>
+            <h3>Person #2</h3>
+            <p>"Harry is really great"</p>
+            <h3>Person #3</h3>
+            <p>"Harry is realy nice"</p>
+        </div>
+        <h1 id="contact" class="heading2">CONTACT HARRY</h1>
+        <section class="comment2">            
+            <form class="comment3">
+                <div class="two">
+                    <input class="three" type="text" placeholder="NAME">
+                    <input class="four" type="text" placeholder="EMAIL">
+                </div>
+                <textarea class="message">MESSAGE</textarea>
+                <button class="submit" type="submit" placeholder="SUBMIT"><a>SUBMIT</a></button>
+                </form>
+        </section>
+        <ul class="icons">
+            <li class="social instagram"><i class="fab fa-instagram fa-3x"></i></li>
+            <li class="social facebook"><i class="fab fa-facebook-square fa-3x"></i></li>
+            <li class="social twitter"><i class="fab fa-twitter-square fa-3x"></i></li>
+            <li class="social linkedin"><i class="fab fa-linkedin fa-3x"></i></li>
+        </ul>
     </main>
     <footer>
-
+        <p class="copyright">&copy; Harry Stacey 2018</p>
     </footer>
 </body>
 </html>
