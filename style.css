@@ -14,6 +14,7 @@ header {
     z-index: 2;
     position: fixed;
     margin: 0%;
+    padding-left: 0;
 }
 
 .navigation {
@@ -21,15 +22,24 @@ header {
     justify-content: flex-end;
 }
 
+.scroll {
+    text-decoration: none;
+}
+
 .toplist {
     padding: 2vh 4vw;
     background-color: white;
     color: black;
     opacity: 0.5;
+    text-decoration: none;
 }
 
 .yellownav {
+    padding: 2vh 4vw;
     background-color: #FBD334;
+    color: black;
+    opacity: 1;
+    text-decoration: none;
 }
 
 .about {
@@ -42,8 +52,16 @@ header {
     transition: 0.5s;
 }
 
+.yellownav:hover {
+    color: black;
+    transition: 0.5s;
+    background-color: white;
+    text-decoration: #FBD334;
+}
+
 .d-block {
     width: 100vw;
+    min-height: 
 }
 
 li {
@@ -64,6 +82,7 @@ li {
     opacity: 0.7;
     max-width: 40vw;
     text-align: center;
+    font-size: 4vh;
 }
 
 .harry {
@@ -192,6 +211,14 @@ main {
     font-size: 3vh;
 }
 
+.said {
+    margin-left: 3vw;
+}
+
+#nice {
+    margin-bottom: 2vh;
+}
+
 .two {
     display: flex;
     justify-content: center;
@@ -254,4 +281,21 @@ footer {
 
 .copyright {
     margin-top: 3vh;
+}
+
+@media only screen and (max-width: 1315px) {
+    .carousel {
+        z-index: 1;
+        position: relative;
+        top: -30vh;
+    }
+    .container {
+        position: relative;
+        z-index: 10;
+        top: 45vh;
+        background-color: white;
+        opacity: 0.7;
+        max-width: 60vw;
+        text-align: center;
+    }
 }

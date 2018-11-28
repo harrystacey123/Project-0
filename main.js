@@ -40,5 +40,13 @@ $(document).ready(function() {
         }, 1000)
     })
 
-    
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 700) {
+        $(`.toplist`).addClass(`yellownav`);
+        } else { 
+        $(`.toplist`).removeClass(`yellownav`);
+        }
+    })
+
 })
